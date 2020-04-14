@@ -16,7 +16,7 @@
 <meta property="og:description" content="官网:HTML（中文:超文本标记语言）是用于在Internet(指的是IE浏览器)上显示Web页面的主要标记语言。网页由HTML组成，用于通过Web浏览器显示文本，图像或其他资源。HTML文件的文件扩展名为.htm或.html">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2019-12-02T09:39:58.000Z">
-<meta property="article:modified_time" content="2020-04-14T03:22:35.984Z">
+<meta property="article:modified_time" content="2020-04-14T04:35:48.653Z">
 <meta property="article:author" content="web云空">
 <meta property="article:tag" content="PHP">
 <meta name="twitter:card" content="summary">
@@ -206,10 +206,9 @@
 <h3 id="脚本风格"><a href="#脚本风格" class="headerlink" title="脚本风格"></a>脚本风格</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;script language&#x3D;&quot;PHP&quot;&gt;</span><br><span class="line">     echo &#39;这是脚本风格的标记&#39;;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
 
 <h3 id="简短风格"><a href="#简短风格" class="headerlink" title="简短风格"></a>简短风格</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?</span> <span class="keyword">echo</span> <span class="string">'这是简短风格的标记'</span>; <span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-
-<pre><code>如果要使用简短风格和ASP风格，需要在php.ini中对其进行配置。该文件在系统盘Windows目录下，如操作系统在C盘，那么该文件的位置就是 C:\Windows\php.ini。
-
-如果用户用的是AppServ安装包，那么通过选择“开始&lt;span style=&quot;color:#e67e22&quot;&gt;”/“程序” /appServ/Configuration Server/PHP Edit the php.ini configuration File命令，&lt;/span&gt;也可以&lt;span style=&quot;color:#e67e22&quot;&gt;打开 php.ini文件，然后将short_open_tag和asp_tags都设置为ON，重启Apache服务器&lt;/span&gt;即可。  </code></pre><h2 id="二、PHP注释的应用和风格"><a href="#二、PHP注释的应用和风格" class="headerlink" title="二、PHP注释的应用和风格"></a>二、PHP注释的应用和风格</h2><p>​    注释即代码的解释和说明，一般<span style="color:#e67e22">放到代码的上方或代码的尾部</span>（放尾部时，代码和注释之间 以<tab>键进行分隔，以方便程序阅读），用来<span style="color:#e67e22">说明代码或函数的编写人、用途、时间</span>等。<span style="color:#e67e22">注释 不会影响到程序的执行</span>，因为在执行时，注释部分会被解释器忽略不计 </p>
+<p>​    如果要使用简短风格和ASP风格，需要在php.ini中对其进行配置。该文件在系统盘Windows目录下，如操作系统在C盘，那么该文件的位置就是 C:\Windows\php.ini。</p>
+<p>​    如果用户用的是AppServ安装包，那么通过选择“开始<span style="color:#e67e22">”/“程序” /appServ/Configuration Server/PHP Edit the php.ini configuration File命令，</span>也可以<span style="color:#e67e22">打开 php.ini文件，然后将short_open_tag和asp_tags都设置为ON，重启Apache服务器</span>即可。  </p>
+<h2 id="二、PHP注释的应用和风格"><a href="#二、PHP注释的应用和风格" class="headerlink" title="二、PHP注释的应用和风格"></a>二、PHP注释的应用和风格</h2><p>​    注释即代码的解释和说明，一般<span style="color:#e67e22">放到代码的上方或代码的尾部</span>（放尾部时，代码和注释之间 以<tab>键进行分隔，以方便程序阅读），用来<span style="color:#e67e22">说明代码或函数的编写人、用途、时间</span>等。<span style="color:#e67e22">注释 不会影响到程序的执行</span>，因为在执行时，注释部分会被解释器忽略不计 </p>
 <h3 id="C-风格的单行注释（-）"><a href="#C-风格的单行注释（-）" class="headerlink" title="C++风格的单行注释（//）"></a>C++风格的单行注释（//）</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">  <span class="keyword">echo</span> <span class="string">'使用C++风格'</span>; <span class="comment">//这就是C++风格 echo 关键字是输出的意思</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="C风格的多行注释（-…-）"><a href="#C风格的多行注释（-…-）" class="headerlink" title="C风格的多行注释（/…./）"></a>C风格的多行注释（/<em>….</em>/）</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">	<span class="comment">/*风格的多行注释*/</span></span><br><span class="line">	<span class="keyword">echo</span> <span class="string">'只会看到这句话。'</span>;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
@@ -344,18 +343,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/12/03/HTML%E7%9A%84%E6%96%87%E6%9C%AC%E6%A0%87%E7%AD%BE/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2019/12/03/PHP%E5%B8%B8%E9%87%8F/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          网页中的文本标签
+          PHP常量
         
       </div>
     </a>
   
   
-    <a href="/2019/12/02/HTML%E7%9A%84%E9%BB%98%E8%AE%A4%E6%8E%92%E7%89%88%E6%96%B9%E5%BC%8F/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">网页的排版</div>
+    <a href="/2019/12/01/PHP%E6%98%AF%E4%BB%80%E4%B9%88/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">PHP是什么</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -639,5 +638,5 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 
 </div>
   </div>
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/haru01.model.json"},"display":{"position":"left","width":300,"height":600,"hOffset":200,"vOffset":0},"mobile":{"show":false}});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/haru01.model.json"},"display":{"position":"left","width":200,"height":400,"hOffset":0,"vOffset":0},"mobile":{"show":false}});</script></body>
 </html>
